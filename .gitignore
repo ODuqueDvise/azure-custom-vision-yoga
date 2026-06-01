@@ -1,0 +1,49 @@
+# Credenciales y variables de entorno
+scripts/.env
+*.env
+!.env.example
+
+# Terraform state y providers
+iac/.terraform/
+iac/.terraform.lock.hcl
+iac/terraform.tfstate
+iac/terraform.tfstate.backup
+iac/*.tfplan
+
+# Archivos generados por scripts
+scripts/project_info.txt
+graficos/predicciones_test.csv
+graficos/*.json
+
+# Dataset original (muy grande para GitHub)
+dataset/
+archive.zip
+
+# Datos preparados (regenerables con prepare_dataset.py)
+data/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Informes generados
+*.pdf
+*.docx
+
+# Capturas de pantalla
+Capturas/
+
+# Material del curso
+VPC_Unidad3_RED5_PDF.pdf
+unisallevirtual-*.pdf
